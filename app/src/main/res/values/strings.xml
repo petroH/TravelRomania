@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TravelRomania</string>
+    <string name="action_settings">Settings</string>
+    <string name="draw_opened">Select an item</string>
+    <string name="draw_closed">Travel</string>
+    <string name="regiuni_feed">https://gist.githubusercontent.com/petroH/f712e808dd4c0a07860d88a4e53f6064/raw/17c1821d926cf096725b10a0b1c2e85c5f2e6998</string>
+</resources>
