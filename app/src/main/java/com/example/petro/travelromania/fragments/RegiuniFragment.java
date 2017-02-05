@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ListFragment;
 import android.util.Log;
-import android.widget.ListView;
 
 import com.example.petro.travelromania.R;
 import com.example.petro.travelromania.adaptors.RegionsAdaptor;
@@ -66,5 +65,6 @@ public class RegiuniFragment extends ListFragment {
             }
         });
     }
+
 
 }

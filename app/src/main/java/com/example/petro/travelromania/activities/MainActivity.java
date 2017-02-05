@@ -1,10 +1,7 @@
 package com.example.petro.travelromania.activities;
 
 import android.content.res.Configuration;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -20,7 +17,6 @@ import com.example.petro.travelromania.events.DrawerSelectionItemEvent;
 import com.example.petro.travelromania.fragments.GalleryFragment;
 import com.example.petro.travelromania.fragments.MapFragment;
 import com.example.petro.travelromania.fragments.RegiuniFragment;
-import com.example.petro.travelromania.regiuni.Regions;
 import com.example.petro.travelromania.utils.EventBus;
 import com.squareup.otto.Subscribe;
 
@@ -132,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
             getSupportFragmentManager().beginTransaction().replace( R.id.container, MapFragment.getInstance() ).commit();
         } else if( event.section.equalsIgnoreCase( "gallery" ) ) {
             getSupportFragmentManager().beginTransaction().replace( R.id.container, GalleryFragment.getInstance() ).commit();
-        }else if( event.section.equalsIgnoreCase( "regiuni" ) ) {
+        }else if( event.section.equalsIgnoreCase( "regions" ) ) {
             getSupportFragmentManager().beginTransaction().replace( R.id.container, RegiuniFragment.getInstance() ).commit();
         } else {
             return;

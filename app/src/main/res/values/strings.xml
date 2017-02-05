@@ -4,5 +4,6 @@
     <string name="draw_opened">Select an item</string>
     <string name="draw_closed">Travel to</string>
     <string name="imagDesc">Romania</string>
-    <string name="regiuni_feed">https://gist.githubusercontent.com/petroH/990da3c606bddb452c33457e57771957/raw/d2cd272b175580bd5434bd5837b1324b4a8aabc6</string>
+    <string name="regiuni_feed">https://gist.githubusercontent.com/petroH/3f46a0ae4d6ed055288f548dfec7b087/raw/c54658ada0b5eeb29b171b2b43ca0aaffd802f8c</string>
+    <string name="gallery_feed">https://gist.githubusercontent.com/petroH/e34c6594c51c9c6c705388a6dcf0918a/raw/f11d8aa1880a86eb5d719402843c1389c1f7f066</string>
 </resources>

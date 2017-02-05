@@ -1,0 +1,75 @@
+
+[
+    {
+        "thumbnail": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/thumbnail_bucovina.jpg",
+        "image1": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/bucovina1.jpg",
+        "image2": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/bucovina2.jpg",
+        "image3": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/bucovina3.jpg",
+        "image4": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/bucovina4.jpg",
+        "caption": "Bucovina: peisaje mirifice si arhitecturi minunate!"
+    },
+       {
+        "thumbnail": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/thumbnail_moldova.jpg",
+        "image1": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/moldova1.jpg",
+        "image2": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/moldova2.jpg",
+        "image3": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/moldova3.jpg",
+        "image4": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/moldova4.jpg",
+        "caption": "Moldova: peisaje mirifice si arhitecturi minunate!"
+    },
+        {
+        "thumbnail": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/thumbnail_transilvania.jpg",
+        "image1": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/transilvania1.jpg",
+        "image2": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/transilvania2.jpg",
+        "image3": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/transilvania3.jpg",
+        "image4": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/transilvania4.jpg",
+        "caption": "Transilvania: peisaje mirifice si arhitecturi minunate!"
+    },
+        {
+        "thumbnail": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/thumbnail_crisana.jpg",
+        "image1": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/crisana1.jpg",
+        "image2": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/crisana2.jpg",
+        "image3": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/crisana3.jpg",
+        "image4": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/crisana4.jpg",
+        "caption": "Crisana: peisaje mirifice si arhitecturi minunate!"
+    },
+        {
+        "thumbnail": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/thumbnail_muntenia.jpg",
+        "image1": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/muntenia1.jpg",
+        "image2": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/muntenia2.jpg",
+        "image3": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/muntenia3.jpg",
+        "image4": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/muntenia4.jpg",
+        "caption": "Muntenia: peisaje mirifice si arhitecturi minunate!"
+    },
+        {
+        "thumbnail": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/thumbnail_oltenia.jpg",
+        "image1": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/oltenia1.jpg",
+        "image2": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/oltenia2.jpg",
+        "image3": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/oltenia3.jpg",
+        "image4": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/oltenia4.jpg",
+        "caption": "Oltenia: peisaje mirifice si arhitecturi minunate!"
+    },
+        {
+        "thumbnail": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/thumbnail_dobrogea.jpg",
+        "image1": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/dobrogea1.jpg",
+        "image2": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/dobrogea2.jpg",
+        "image3": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/dobrogea3.jpg",
+        "image4": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/dobrogea4.jpg",
+        "caption": "Dobrogea: peisaje mirifice si arhitecturi minunate!"
+    },
+        {
+        "thumbnail": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/thumbnail_maramures.jpg",
+        "image1": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/maramures1.jpg",
+        "image2": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/maramures2.jpg",
+        "image3": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/maramures3.jpg",
+        "image4": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/maramures4.jpg",
+        "caption": "Maramures: peisaje mirifice si arhitecturi minunate!"
+    },
+        {
+        "thumbnail": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/thumbnail_banat.jpg",
+        "image1": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/banat1.jpg",
+        "image2": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/banat2.jpg",
+        "image3": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/banat3.jpg",
+        "image4": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/gallery/banat4.jpg",
+        "caption": "Banat: peisaje mirifice si arhitecturi minunate!"
+    }
+]
