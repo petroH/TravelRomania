@@ -28,7 +28,7 @@ public class DrawNavigationListView extends ListView implements AdapterView.OnIt
         super(context, attrs, defStyleAttr);
 
         DrawerNavigationListAdapter adapter = new DrawerNavigationListAdapter( getContext(), 0 );
-        adapter.add( "Regiuni" );
+        adapter.add( "Regions" );
         adapter.add( "Gallery" );
         adapter.add( "Maps" );
 

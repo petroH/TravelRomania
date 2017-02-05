@@ -13,15 +13,17 @@ public class Regions implements Parcelable {
     private String description;
     private String thumbnail;
     private String image;
+    private String longDescription;
 
     public Regions() {
     }
 
-    public Regions(String name, String description, String thumbnail, String image) {
+    public Regions(String name, String description, String thumbnail, String image, String longDescription) {
         this.name = name;
         this.description = description;
         this.thumbnail = thumbnail;
         this.image = image;
+        this.longDescription= longDescription;
     }
 
     public Regions(Parcel source) {
@@ -29,7 +31,12 @@ public class Regions implements Parcelable {
         description = source.readString();
         thumbnail = source.readString();
         image = source.readString();
+        longDescription=source.readString();
     }
+
+    public String getLongDescription() { return longDescription; }
+
+    public void setLongDescription(String longDescription) { this.longDescription = longDescription; }
 
     public String getImage() {
         return image;
@@ -75,6 +82,7 @@ public class Regions implements Parcelable {
         dest.writeString(description);
         dest.writeString(thumbnail);
         dest.writeString(image);
+        dest.writeString(longDescription);
     }
 
     private void applyDefaultValues() {
@@ -89,6 +97,9 @@ public class Regions implements Parcelable {
         }
         if (image == null) {
             image = "";
+        }
+        if (longDescription == null) {
+            longDescription = "";
         }
     }
 

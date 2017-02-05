@@ -2,6 +2,7 @@
     <string name="app_name">TravelRomania</string>
     <string name="action_settings">Settings</string>
     <string name="draw_opened">Select an item</string>
-    <string name="draw_closed">Travel</string>
-    <string name="regiuni_feed">https://gist.githubusercontent.com/petroH/6fc40e0c62345c116a31e5bee6149382/raw/863bf289986f8ec0840d00f1579a2706feb43069</string>
+    <string name="draw_closed">Travel to</string>
+    <string name="imagDesc">Romania</string>
+    <string name="regiuni_feed">https://gist.githubusercontent.com/petroH/990da3c606bddb452c33457e57771957/raw/d2cd272b175580bd5434bd5837b1324b4a8aabc6</string>
 </resources>

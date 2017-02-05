@@ -11,7 +11,7 @@ import retrofit.http.GET;
  * Created by Petro on 04-Feb-17.
  */
 
-public interface RegionsApiInterface {
+public interface  RegionsApiInterface{
 
     @GET("/regiuni.json")
     void getStreams(Callback<List<Regions>> callback);

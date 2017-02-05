@@ -38,24 +38,14 @@
 
         <com.example.petro.travelromania.views.DrawNavigationListView
             android:id="@+id/drawer"
-            android:layout_width="240dp"
+            android:layout_width="220dp"
             android:layout_height="match_parent"
             android:layout_gravity="start"
-            android:background="@android:color/holo_green_light" >
+            android:background="@android:color/white" >
         </com.example.petro.travelromania.views.DrawNavigationListView>
 
     </android.support.v4.widget.DrawerLayout>
 
     </LinearLayout>
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
-
-
 
 </android.support.design.widget.CoordinatorLayout>
