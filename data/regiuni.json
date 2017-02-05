@@ -1,9 +1,57 @@
 
 [
     {
-        "name": "Bucovina",
-        "description": "Bucovina este printre cele mai atractive si frecventate zone turistice de pe harta României. Nu intamplator de altfel, aceasta zona, vestita astazi in intreaga lume, a fost distinsa in anul 1975 cu premiul international “Pomme d’Or” de catre Federatia Internationala a Ziaristilor si Scriitorilor de Turism, iar multisecularele monumente de arhitectura cu fresce interioare si exterioare din acest colt de tara au fost trecute de UNESCO in lista monumentelor de arta universala.",
-        "thumbnail": "https://raw.githubusercontent.com/petroH/TravelRomania/images/thumbnail_bucovina.jpg",
-        "image": "https://raw.githubusercontent.com/petroH/TravelRomania//images/bucovina.jpg"
+        "name": "BUCOVINA",
+        "description": "Bucovina este printre cele mai atractive si frecventate zone turistice de pe harta României.",
+        "thumbnail": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/thumbnail_bucovina.jpg",
+        "image": "https://raw.githubusercontent.com/petroH/TravelRomania/master/images/bucovina.jpg"
+    },
+        {
+        "name": "MOLDOVA",
+        "description": "Moldova prezintă o combinație complexă de medii naturale (arii naturale, defilee, lunci) și artificiale (lăcașuri medievale, cetăți, biserici, festivaluri, etc).",
+        "thumbnail": "",
+        "image": ""
+    },
+        {
+        "name": "BANAT",
+        "description": "Zona turistică AURORA BANATULUI  este „perla” turismului din Banat, de o frumuseţe neasemuită, încât turistul care a descoperit-o este cuprins de dorinţa  unei permanente „redescoperiri”.",
+        "thumbnail": "",
+        "image": ""
+    },
+                {
+        "name": "MARAMURES",
+        "description": "Regiunea acoperă totul, de la excursii pe munte şi sporturi extreme la turism cultural şi religios. Dacă sunteţi un iubitor al naturii, cu siguranţă veţi iubi peisajele montane şi ale văilor, care vă lasă fără respiraţie.",
+        "thumbnail": "",
+        "image": ""
+    },
+                {
+        "name": "OLTENIA",
+        "description": "Oltenia este o regiune istorică din sud-vestul României delimitată la est de râul Olt,[1] la sud și vest de Dunăre, iar la nord de Carpații Meridionali.",
+        "thumbnail": "",
+        "image": ""
+    },
+                {
+        "name": "MUNTENIA",
+        "description": "Muntenia este o zonă turistică a contrastelor, întinzându-se de la semețele culmi ale Carpaților în Nord, până la atracțiile și misterele Dunării în Sud, zona dispunând de o mulțime de bogății ce așteaptă să fie descoperite.",
+        "thumbnail": "",
+        "image": ""
+    },
+                {
+        "name": "DOBROGEA",
+        "description": "Dobrogea este cel mai vechi teritoriu al țării noastre, unde înfloreau cu multe secole în urmă civilizații elene și romane, cotropite apoi de invaziile popoarelor barbare. Urmele fostelor civilizații ce au trecut peste aceste meleaguri se regăsesc în vestigii arheologice, în ruine de cetăți, în obiceiuri și mâncăruri tradiționale.",
+        "thumbnail": "",
+        "image": ""
+    },
+                {
+        "name": "TRANSILVANIA",
+        "description": "Zona turistica Transilvania este situata intre lantul Carpatilor Orientali, Carpatii Meridionali si Muntii Apuseni, o provincie istorica ce poarta pe obraz urmele numeroaselor batalii duse aici de-a lungul timpului.",
+        "thumbnail": "",
+        "image": ""
+    },
+                {
+        "name": "CRIŞANA",
+        "description": "Provincia Crișana, este una dintre cele mai interesante destinații de vacanță, având în vedere bogata tradiție culturală și arhitectură, ce se evidentiază în vestigii și construcții dintre cele mai frumoase.",
+        "thumbnail": "",
+        "image": ""
     }
 ]

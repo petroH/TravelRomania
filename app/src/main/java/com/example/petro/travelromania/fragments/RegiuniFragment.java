@@ -6,6 +6,7 @@ import android.support.v4.app.ListFragment;
 import android.util.Log;
 
 import com.example.petro.travelromania.R;
+import com.example.petro.travelromania.adaptors.RegionsAdaptor;
 import com.example.petro.travelromania.regiuni.Regions;
 import com.example.petro.travelromania.utils.RegionsApiInterface;
 
@@ -21,6 +22,9 @@ import retrofit.client.Response;
  * Created by Petro on 04-Feb-17.
  */
 public class RegiuniFragment extends ListFragment {
+
+    private RegionsAdaptor regionAdapt;
+
     public static RegiuniFragment getInstance(){
         RegiuniFragment fragment= new RegiuniFragment();
         return fragment;
@@ -29,7 +33,11 @@ public class RegiuniFragment extends ListFragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        RestAdapter restAdapter = new RestAdapter.Builder()
+
+        setListShown(false);
+        regionAdapt=new RegionsAdaptor(getActivity(), 0);
+
+        final RestAdapter restAdapter = new RestAdapter.Builder()
                 .setEndpoint( getString( R.string.regiuni_feed ) )
                 .build();
 
@@ -42,8 +50,13 @@ public class RegiuniFragment extends ListFragment {
                     return;
 
                 for( Regions reg : regiuni ) {
-                    Log.e( "Regiuni",reg.getName());
+                    regionAdapt.add(reg);
                 }
+
+//updates automaticaly the data
+                regionAdapt.notifyDataSetChanged();
+                setListAdapter(regionAdapt);
+                setListShown(true);
             }
 
             @Override
