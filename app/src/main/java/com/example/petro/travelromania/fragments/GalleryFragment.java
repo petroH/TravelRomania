@@ -1,15 +1,19 @@
 package com.example.petro.travelromania.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 import android.view.ViewGroup;
 
 import com.example.petro.travelromania.R;
+import com.example.petro.travelromania.activities.GalleryDetailActivity;
+import com.example.petro.travelromania.activities.MainActivity;
 import com.example.petro.travelromania.adaptors.GalleryImageAdapter;
 import com.example.petro.travelromania.regiuni.GalleryImage;
 import com.example.petro.travelromania.utils.GalleryApiInterface;
@@ -26,7 +30,7 @@ import retrofit.RestAdapter;
  * Created by Petro on 04-Feb-17.
  */
 
-public class GalleryFragment extends Fragment {
+public class GalleryFragment extends Fragment implements AdapterView.OnItemClickListener{
 
     private GridView mGridView;
     private GalleryImageAdapter mAdapter;
@@ -69,7 +73,7 @@ public class GalleryFragment extends Fragment {
                     return;
 
                 for( GalleryImage image : galleryImages ) {
-                    Log.e("Zoo", image.getThumbnail() );
+                    Log.e("Images", image.getThumbnail() );
                     mAdapter.add( image );
                 }
                 mAdapter.notifyDataSetChanged();
@@ -80,5 +84,14 @@ public class GalleryFragment extends Fragment {
 
             }
         });
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        GalleryImage image = (GalleryImage) parent.getItemAtPosition( position );
+        Intent intent = new Intent( getActivity(), GalleryDetailActivity.class );
+        intent.putExtra( GalleryDetailActivity.EXTRA_IMAGE, image.getImage1() );
+        intent.putExtra( GalleryDetailActivity.EXTRA_CAPTION, image.getCaption() );
+        startActivity( intent );
     }
 }

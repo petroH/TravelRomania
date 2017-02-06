@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TravelRomania</string>
+    <string name="app_name">TraveltoRomania</string>
     <string name="action_settings">Settings</string>
     <string name="draw_opened">Select an item</string>
     <string name="draw_closed">Travel to</string>
