@@ -6,4 +6,5 @@
     <string name="imagDesc">Romania</string>
     <string name="regiuni_feed">https://gist.githubusercontent.com/petroH/3f46a0ae4d6ed055288f548dfec7b087/raw/c54658ada0b5eeb29b171b2b43ca0aaffd802f8c</string>
     <string name="gallery_feed">https://gist.githubusercontent.com/petroH/e34c6594c51c9c6c705388a6dcf0918a/raw/f11d8aa1880a86eb5d719402843c1389c1f7f066</string>
+<string name="map_feed">https://gist.githubusercontent.com/petroH/c327dc594143c40154f925ee9c8d8498/raw/c3528f3b4c8b5058b49f59f8b09d040caa2d2835</string>
 </resources>

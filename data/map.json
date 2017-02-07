@@ -1,0 +1,47 @@
+[
+	{
+		"name": "Bucovina",
+		"latitude": 47.553889,
+		"longitude": 25.889167
+	},
+	{
+		"name": "Maramures",
+		"latitude": 47.65,
+		"longitude": 23.566667
+	},
+	{
+		"name": "Muntenia",
+		"latitude": 44.435278,
+		"longitude": 26.102778
+	},
+	{
+		"name": "Oltenia",
+		"latitude": 45.104722,
+		"longitude": 24.375556
+	},
+	{
+		"name": "Crisana",
+		"latitude": 46.176667,
+		"longitude": 21.301111
+	},
+	{
+		"name": "Transilvania",
+		"latitude": 46.766667,
+		"longitude": 23.6
+	},
+	{
+		"name": "Moldova",
+		"latitude": 47.162222,
+		"longitude": 27.588889
+	},
+	{
+		"name": "Dobrogea",
+		"latitude": 44.173333,
+		"longitude": 28.638333
+	},
+	{
+		"name": "Banat",
+		"latitude": 45.749444,
+		"longitude": 21.227222
+	}
+]

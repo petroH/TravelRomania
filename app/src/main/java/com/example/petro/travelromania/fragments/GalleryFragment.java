@@ -30,7 +30,7 @@ import retrofit.RestAdapter;
  * Created by Petro on 04-Feb-17.
  */
 
-public class GalleryFragment extends Fragment implements AdapterView.OnItemClickListener{
+public class GalleryFragment extends Fragment {
 
     private GridView mGridView;
     private GalleryImageAdapter mAdapter;
@@ -51,6 +51,20 @@ public class GalleryFragment extends Fragment implements AdapterView.OnItemClick
         super.onViewCreated(view, savedInstanceState);
 
         mGridView = (GridView) view.findViewById( R.id.grid );
+        mGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                GalleryImage image = (GalleryImage) parent.getItemAtPosition( position );
+                Intent intent = new Intent( getActivity(), GalleryDetailActivity.class );
+                intent.putExtra( GalleryDetailActivity.EXTRA_IMAGE1, image.getImage1() );
+                intent.putExtra( GalleryDetailActivity.EXTRA_IMAGE2, image.getImage2() );
+                intent.putExtra( GalleryDetailActivity.EXTRA_IMAGE3, image.getImage3() );
+                intent.putExtra( GalleryDetailActivity.EXTRA_IMAGE4, image.getImage4() );
+                intent.putExtra( GalleryDetailActivity.EXTRA_CAPTION, image.getCaption() );
+
+                startActivity( intent );
+            }
+        });
     }
 
     @Override
@@ -74,9 +88,11 @@ public class GalleryFragment extends Fragment implements AdapterView.OnItemClick
 
                 for( GalleryImage image : galleryImages ) {
                     Log.e("Images", image.getThumbnail() );
+                    Log.e("Image1", image.getImage1());
                     mAdapter.add( image );
                 }
                 mAdapter.notifyDataSetChanged();
+
             }
 
             @Override
@@ -86,12 +102,4 @@ public class GalleryFragment extends Fragment implements AdapterView.OnItemClick
         });
     }
 
-    @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        GalleryImage image = (GalleryImage) parent.getItemAtPosition( position );
-        Intent intent = new Intent( getActivity(), GalleryDetailActivity.class );
-        intent.putExtra( GalleryDetailActivity.EXTRA_IMAGE, image.getImage1() );
-        intent.putExtra( GalleryDetailActivity.EXTRA_CAPTION, image.getCaption() );
-        startActivity( intent );
-    }
 }
