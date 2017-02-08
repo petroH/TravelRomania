@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawLayout;
     private ActionBarDrawerToggle mActBarDrawToggle;
-    private String mCurrentFragmentTitle;
+    private String mCurrentFragmentTitle;;
 
 
     @Override
@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);

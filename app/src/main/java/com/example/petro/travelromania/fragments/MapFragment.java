@@ -4,23 +4,31 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.Toast;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
 
 import com.example.petro.travelromania.activities.RegionsDetailActivity;
 import com.example.petro.travelromania.adaptors.RegionsAdaptor;
 import com.example.petro.travelromania.regiuni.Regions;
 import com.example.petro.travelromania.utils.RegionsApiInterface;
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
-import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.example.petro.travelromania.R;
-import com.example.petro.travelromania.regiuni.Map;
+import com.example.petro.travelromania.regiuni.MapModel;
 import com.example.petro.travelromania.utils.MapApiInterface;
 
 import java.util.List;
@@ -37,25 +45,27 @@ import retrofit.client.Response;
 public class MapFragment extends SupportMapFragment {
 
    private RegionsAdaptor regAdaptor;
+    private HashMap markerHashMap;
+    private Iterator<Entry> iter;
+    private CameraUpdate cu;
 
     public static MapFragment getInstance() {
         MapFragment fragment = new MapFragment();
         return fragment;
     }
+
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
         regAdaptor= new RegionsAdaptor(getActivity(),0);
 
-        CameraPosition position = CameraPosition.builder()
-                .target( new LatLng( 44.416667, 26.1 ) )
-                .zoom( 16f )
-                .bearing( 0.0f )
-                .tilt( 0.0f )
-                .build();
+        getMap().getUiSettings().setCompassEnabled(true);
+        getMap().getUiSettings().setRotateGesturesEnabled(false);
+        getMap().getUiSettings().setTiltGesturesEnabled(true);
+        getMap().getUiSettings().setZoomControlsEnabled(true);
+        getMap().getUiSettings().setMyLocationButtonEnabled(true);
 
-        getMap().animateCamera(CameraUpdateFactory.newCameraPosition( position ), null );
         getMap().setMapType(GoogleMap.MAP_TYPE_HYBRID);
         getMap().setTrafficEnabled( true );
 
@@ -160,15 +170,18 @@ public class MapFragment extends SupportMapFragment {
 
         MapApiInterface pinsApiInterface = adapter.create( MapApiInterface.class );
 
-        pinsApiInterface.getStreams( new Callback<List<Map>>() {
+        pinsApiInterface.getStreams( new Callback<List<MapModel>>() {
             @Override
-            public void success(List<Map> pins, Response response) {
-                for( Map pin : pins ) {
+            public void success(List<MapModel> pins, Response response) {
+                for( MapModel pin : pins ) {
                    MarkerOptions options= new MarkerOptions().position(new LatLng(pin.getLatitude(), pin.getLongitude()));
                     options.title(pin.getName());
-                    options.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_VIOLET));
-                    getMap().addMarker(options);
+                    options.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
+                    Marker marker= getMap().addMarker(options);
+                    //adding markers to hashmap
+                    addMarkedToHashMap(pin, marker);
                 }
+                zoomAnimateLevelToFitMarkers(120);
             }
 
             @Override
@@ -203,6 +216,38 @@ public class MapFragment extends SupportMapFragment {
                 Log.e( "Regiuni", "Retrofit error " + error.getMessage() );
             }
         });
-
     }
+
+    //sets up the hashmap
+    public void setMarkerHashMap(){
+        if(markerHashMap== null){
+            markerHashMap= new HashMap();
+        }
+    }
+
+    //adds all the markers on the map
+    public void addMarkedToHashMap(MapModel pin, Marker marker){
+        setMarkerHashMap();
+        markerHashMap.put(pin,marker);
+    }
+
+    //this is method to help us fit the Markers into specific bounds for camera position
+    public void zoomAnimateLevelToFitMarkers(int padding) {
+        LatLngBounds.Builder b = new LatLngBounds.Builder();
+        iter = markerHashMap.entrySet().iterator();
+
+        while (iter.hasNext()) {
+            Map.Entry mEntry = (Map.Entry) iter.next();
+            MapModel key = (MapModel) mEntry.getKey();
+            LatLng ll = new LatLng(key.getLatitude(), key.getLongitude());
+            b.include(ll);
+        }
+        LatLngBounds bounds = b.build();
+
+        // Change the padding as per needed
+        cu = CameraUpdateFactory.newLatLngBounds(bounds, padding);
+        getMap().animateCamera(cu);
+    }
+
+
 }

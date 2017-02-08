@@ -4,12 +4,12 @@ package com.example.petro.travelromania.regiuni;
  * Created by Petro on 07-Feb-17.
  */
 
-public class Map {
+public class MapModel {
     private String name;
     private double longitude;
     private double latitude;
 
-    public Map( String name, double longitude, double latitude ) {
+    public MapModel(String name, double longitude, double latitude ) {
         this.name = name;
         this.longitude = longitude;
         this.latitude = latitude;

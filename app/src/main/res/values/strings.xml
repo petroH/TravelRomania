@@ -1,9 +1,15 @@
 <resources>
     <string name="app_name">Travel to Romania</string>
     <string name="action_settings">Settings</string>
-    <string name="draw_opened">Select an item</string>
-    <string name="draw_closed">Travel to</string>
+    <string name="draw_opened">Selectati un item</string>
+    <string name="draw_closed">Va asteptam la</string>
     <string name="imagDesc">Romania</string>
+    <string name="rate">Rating </string>
+    <string name="submit">Submit</string>
+    <string name="rezRate">Votul dumneavostra este: </string>
+    <string name="nume">Nume si Prenume</string>
+    <string name="mail">E-mail</string>
+    <string name="zoom">Zoom to markers</string>
     <string name="regiuni_feed">https://gist.githubusercontent.com/petroH/24f58bd1add4838c57b9f6fd4f3b8360/raw/559871dd594eacbba63afd256e1a40565feaa24a</string>
     <string name="gallery_feed">https://gist.githubusercontent.com/petroH/e34c6594c51c9c6c705388a6dcf0918a/raw/f11d8aa1880a86eb5d719402843c1389c1f7f066</string>
 <string name="map_feed">https://gist.githubusercontent.com/petroH/c327dc594143c40154f925ee9c8d8498/raw/c3528f3b4c8b5058b49f59f8b09d040caa2d2835</string>
