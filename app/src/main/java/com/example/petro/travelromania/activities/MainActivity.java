@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         mDrawLayout.addDrawerListener(mActBarDrawToggle);
-        displayInitialFragment();
+        //displayInitialFragment();
 
     }
 

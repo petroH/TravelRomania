@@ -53,6 +53,15 @@ Google Maps Android API v2, but are recommended.
 
         </activity>
 
+        <activity android:name=".activities.RegionsDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".activities.MainActivity">
+
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+
+        </activity>
+
     </application>
 
 </manifest>
