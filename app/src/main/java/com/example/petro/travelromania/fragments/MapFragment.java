@@ -60,12 +60,6 @@ public class MapFragment extends SupportMapFragment {
 
         regAdaptor= new RegionsAdaptor(getActivity(),0);
 
-        getMap().getUiSettings().setCompassEnabled(true);
-        getMap().getUiSettings().setRotateGesturesEnabled(false);
-        getMap().getUiSettings().setTiltGesturesEnabled(true);
-        getMap().getUiSettings().setZoomControlsEnabled(true);
-        getMap().getUiSettings().setMyLocationButtonEnabled(true);
-
         getMap().setMapType(GoogleMap.MAP_TYPE_HYBRID);
         getMap().setTrafficEnabled( true );
 
