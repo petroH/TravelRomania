@@ -51,7 +51,7 @@ public class RegionsDetailActivity  extends AppCompatActivity {
     private ProgressDialog pDialog;
 
     // url to insert new revie (change accordingly)
-    private static String url_insert_new = "http://192.168.1.4/appjson/insertnew.php";
+    private static String url_insert_new = "http://192.168.0.110/appjson/insertnew.php";
     // JSON Node names
     private static final String TAG_SUCCESS = "success";
 
